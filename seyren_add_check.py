@@ -13,7 +13,7 @@ from pymongo import Connection
 true=bool(1)
 false=bool(1)
 null=None
-connection = Connection('soundwave.internal.shutterfly.com', 27017)
+connection = Connection('', 27017)
 db = connection.seyren
 id=hashlib.md5(os.urandom(128)).hexdigest()[:24]
 posts = db['checks']
